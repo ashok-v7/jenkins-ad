@@ -3,7 +3,7 @@ import os
 def read_file_content():
     # Construct the file path relative to the current working directory
     print("getcwd",os.getcwd())
-    file_path = os.path.join(os.getcwd(), "data/workspaces/ssops/BTKN")
+    file_path = os.path.join(os.getcwd(), "data/workspaces/ssops/BRNT")
     print("file_path-->",file_path)
 
     try:
