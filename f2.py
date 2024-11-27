@@ -1,7 +1,10 @@
 import os
 
-# Construct the absolute path to the file
-file_path = "/data/workspaces/ssops/BTKN"
+# Get the current working directory (Jenkins workspace root)
+workspace_dir = os.getcwd()
+
+# Construct the relative path to the BTKN file
+file_path = os.path.join(workspace_dir, "data/workspaces/ssops/BTKN")
 
 try:
     # Open the file and read its contents
